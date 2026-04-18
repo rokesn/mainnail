@@ -1,0 +1,1 @@
+ALTER TABLE public.reviews ADD COLUMN IF NOT EXISTS profile_pic_url TEXT DEFAULT NULL;

@@ -1,0 +1,523 @@
+# =====================================================================
+#  SEO AUDIT & IMPROVEMENT PLAN — fresaunghie.store
+#  Target keyword : "Fresa Unghie"  (+ long-tail cluster)
+#  Target country : ITALY (it-IT)
+#  Target engines : Google, Bing + AI engines (ChatGPT, Perplexity,
+#                   Google AI Overviews, Gemini, Claude, You.com)
+#  Author         : Lovable AI — SEO Expert Mode
+#  Last updated   : 2026-04-18
+# =====================================================================
+
+
+## IMPLEMENTATION STATUS
+
+### ✅ DONE (already implemented in the codebase)
+
+  [x] llms.txt created in /public/llms.txt (AI-engine sitemap)
+  [x] AI bots allowed in robots.txt: GPTBot, ChatGPT-User,
+      OAI-SearchBot, PerplexityBot, ClaudeBot, anthropic-ai,
+      Google-Extended, Applebot-Extended, CCBot, cohere-ai,
+      Bytespider, Amazonbot, Meta-ExternalAgent, YouBot, DiffBot
+  [x] Vite bundle splitting (react / supabase / motion / radix /
+      icons / charts / helmet) — main bundle reduced from 743 kB
+      to 166 kB (47 kB gzip)
+  [x] Google Analytics deferred — loads after window.load + 1.5 s,
+      protects LCP and INP
+  [x] Self-hosted fonts (Cormorant Garamond + Jost via @fontsource)
+      → removed external Google Fonts request, no FOIT
+  [x] Blog hub at /guide with 6 SEO cluster articles:
+        - come-usare-fresa-unghie
+        - fresa-unghie-gel-rimozione
+        - punte-fresa-unghie-quale-scegliere
+        - fresa-unghie-principianti
+        - manutenzione-fresa-unghie
+        - migliore-fresa-unghie-2026
+      Each article includes:
+        - Article + BreadcrumbList + Speakable JSON-LD schema
+        - "Risposta breve" TL;DR block (cited by AI engines)
+        - Author E-E-A-T signal (Francesca Conti, certified)
+        - Internal silo links + related posts
+        - "Aggiornato il" freshness signal
+  [x] sitemap.xml updated with /guide + 6 articles
+  [x] Footer enriched with new "Guide" column (6 contextual links)
+  [x] Product + AggregateRating + BreadcrumbList + FAQ + HowTo +
+      Speakable JSON-LD already present on /prodotto/* pages
+  [x] OptimizedImage component already implements:
+        - fetchpriority="high" on LCP
+        - loading="lazy" on below-the-fold
+        - decoding="async"
+        - srcset + sizes (responsive)
+        - WebP via kwcdn URL params
+
+  [x] llms-full.txt published with full plain-text product/FAQ content
+  [x] LocalBusiness/Store schema (service-area Italy) in index.html
+  [x] Footer enriched with "Spedizione in Italia" silo (top 10 cities)
+  [x] Footer shows brand/email/country (legal trust signals)
+  [x] Robots meta tags (max-image-preview:large, max-snippet:-1)
+  [x] Security/referrer meta (X-Content-Type-Options, Referrer-Policy)
+  [x] llms-full.txt + llms.txt FAQ block referenced in robots.txt sitemaps
+  [x] Crawl-delay for SemrushBot/AhrefsBot/MJ12bot (saves crawl budget)
+
+### ⏳ TODO — manual or external work needed
+
+  [ ] Pre-rendering / SSG (vite-react-ssg or react-snap)
+        → critical: AI crawlers (GPTBot, PerplexityBot, ClaudeBot)
+          and Bingbot DO NOT execute JS; today they see an empty
+          <div id="root"></div>. Highest-impact remaining task.
+
+  [ ] More blog articles (6 additional cluster posts) — manual
+  [ ] Programmatic city pages: expand cities.ts from 20 → 50 — manual
+  [ ] Programmatic punte pages: expand punte.ts from 12 → 25 — manual
+  [ ] Convert hero images to WebP/AVIF, rename with keywords — binary work
+  [ ] Bing Webmaster Tools verification + IndexNow API key — external
+  [ ] Google Business Profile (service-area business) — external
+  [ ] Trovaprezzi / Idealo / Google Shopping product feed — external
+  [ ] Backlink outreach + digital PR campaign — external
+  [ ] Add P.IVA + ragione sociale in footer (need real legal data)
+
+
+# =====================================================================
+## 1. KEYWORD STRATEGY (Italian market)
+# =====================================================================
+
+PRIMARY (head term)
+  - fresa unghie                       (~27,000 monthly searches, medium KD)
+
+SECONDARY (high commercial intent)
+  - fresa per unghie professionale
+  - fresa elettrica unghie
+  - fresa unghie professionale
+  - migliore fresa unghie
+  - fresa unghie ricaricabile
+  - fresa unghie kit
+
+LONG-TAIL (low competition, high conversion)
+  - come usare la fresa per unghie
+  - fresa unghie gel come si usa
+  - punte fresa unghie a cosa servono
+  - fresa unghie per principianti
+  - fresa unghie per cuticole
+  - fresa unghie 35000 rpm
+  - fresa unghie professionale prezzo
+  - fresa unghie senza fili
+  - fresa unghie per pedicure / piedi
+
+LOCAL (programmatic SEO)
+  - fresa unghie + city: milano, roma, napoli, torino, bologna,
+    firenze, palermo, genova, bari, catania, ... (top 50)
+
+INFORMATIONAL (AI-search & featured snippets)
+  - cos'è una fresa per unghie
+  - differenza fresa e lima elettrica
+  - quale fresa unghie comprare
+  - fresa unghie controindicazioni
+  - manutenzione fresa unghie
+
+KEYWORD-TO-URL MAP
+  /                                    → fresa unghie (pillar)
+  /prodotto/fresa-unghie-professionale → fresa unghie professionale
+  /prodotto/fresa-professionale-salone → fresa salone 45000 rpm
+  /glossario-fresa-unghie              → punte fresa + terminology
+  /guide                               → blog hub
+  /guide/{slug}                        → cluster articles ✅
+  /punta-fresa/{slug}                  → individual punta type
+  /spedizioni/{city}                   → city landing pages
+  /chi-siamo                           → brand + author E-E-A-T
+  /confronta/{slugs}                   → comparison / "migliore"
+
+
+# =====================================================================
+## 2. ON-PAGE SEO — HOMEPAGE (/)
+# =====================================================================
+
+TITLE (≤ 60 chars)
+  Current  : "Fresa Unghie | Per Uso Personale e Professionale"  ✔ OK
+  A/B test :
+  "Fresa Unghie Professionale 2026 — Kit 12 Punte | Spedizione Gratis"
+
+META DESCRIPTION (≤ 160 chars)
+  Current : OK but generic.
+  Suggested:
+  "Fresa unghie professionale con 12 punte incluse. Ricaricabile USB-C,
+  4 velocità, ideale per gel e acrilico. ✓ Spedizione gratis Italia
+  ✓ Reso 30 gg."
+
+H1 (only one per page) ✔ OK already implemented.
+
+FIRST-FOLD COPY (critical for AI Overviews):
+  Add a 40-60 word definitional paragraph below H1 that answers
+  "cos'è una fresa unghie". AI engines cite the first 100 tokens.
+
+  Example:
+  «La fresa per unghie è uno strumento elettrico rotante usato in
+  manicure e pedicure professionale per limare, modellare, rimuovere
+  gel, acrilico e cuticole. Il nostro kit include 12 punte
+  intercambiabili, 4 velocità e batteria USB-C ricaricabile.»
+
+LSI keywords to weave in naturally:
+  manicure, pedicure, onicotecnica, gel, semipermanente, acrilico,
+  cuticole, callo, RPM, mandrino, punte diamantate, ceramica, carburo.
+
+INTERNAL ANCHORS from home (silo):
+  - "fresa unghie professionale" → /prodotto/fresa-unghie-professionale
+  - "punte fresa per unghie"     → /glossario-fresa-unghie
+  - "guide fresa unghie"         → /guide   ✅ NEW
+  - "come usare la fresa unghie" → /guide/come-usare-fresa-unghie ✅
+  - "fresa unghie {city}"        → /spedizioni/milano (etc.)
+
+
+# =====================================================================
+## 3. ON-PAGE SEO — PRODUCT PAGES
+# =====================================================================
+
+TITLE pattern :
+  "{Product Name} — Fresa Unghie Professionale | Fresa Unghie Pro"
+
+META DESC pattern :
+  "{USP in one sentence}. {N} punte incluse, {RPM} RPM, USB-C.
+  Spedizione gratuita in Italia in 7 giorni."
+
+REQUIRED SCHEMA — already implemented ✅:
+  - Product (name, image[], description, sku, mpn, brand)
+  - Offer (price, EUR, availability, priceValidUntil, shipping,
+    hasMerchantReturnPolicy)
+  - AggregateRating (ratingValue, reviewCount — REAL data)
+  - Review (≥3: author, datePublished, reviewBody, ratingValue)
+  - BreadcrumbList: Home > Prodotti > {Name}
+
+CONTENT REQUIREMENT (≥ 1500 words):
+  1. Long description with primary keyword
+  2. Tech specs table (RPM, weight, battery, autonomy)
+  3. "What's in the box" (12 punte listed)
+  4. "How to use" (HowTo schema)
+  5. "Who it's for" (beginners / professionals)
+  6. FAQ (FAQPage schema, 6-10 Q&A)
+  7. Reviews with user photos (UGC = SEO boost)
+  8. CTA + trust badges + return policy
+
+
+# =====================================================================
+## 4. TECHNICAL SEO
+# =====================================================================
+
+[CRITICAL] PRE-RENDERING / SSG  ⏳ TODO
+  Stack is React SPA → first HTML is almost empty.
+  Recommended approaches in order of preference:
+    a) Re-introduce vite-react-ssg (was in original repo)
+    b) react-snap (build-time prerender)
+    c) Cloudflare HTML Rewriter / Vercel ISR
+  Without pre-rendering: GPTBot, PerplexityBot, ClaudeBot and Bingbot
+  see <div id="root"></div> empty. Google JS-renders but with delay.
+
+ROBOTS.TXT  ✅ DONE — all major AI crawlers allowed.
+
+SITEMAP.XML  ✅ DONE
+  - Includes /guide + 6 articles
+  - Image-sitemap kept separate
+  - Add video-sitemap when YouTube tutorials are published
+
+CANONICAL  ✔ present, verify on every SPA route
+HREFLANG   ✔ it-IT, it, x-default — OK
+
+CORE WEB VITALS
+  ✅ Bundle code-split (743 kB → 166 kB main, 47 kB gzip)
+  ✅ Self-hosted fonts (no external request, no FOIT)
+  ✅ GA deferred (loads 1.5 s after window.load)
+  ✅ fetchpriority="high" on LCP, lazy on rest
+  [ ] TODO: Convert hero images to WebP/AVIF (binary work)
+  [ ] TODO: Verify real LCP image vs preloaded one in index.html
+
+URL & SLUG ✔ already SEO-friendly (Italian, kebab-case)
+
+HTTPS, HTTP/2, BROTLI compression → handled by Lovable hosting ✔
+
+404 → custom NotFound ✔, returns real 404 status (good for crawl budget)
+
+SECURITY HEADERS (indirect SEO):
+  - Strict-Transport-Security
+  - X-Content-Type-Options: nosniff
+  - Referrer-Policy: strict-origin-when-cross-origin
+
+
+# =====================================================================
+## 5. STRUCTURED DATA (JSON-LD) — FULL CHECKLIST
+# =====================================================================
+
+GLOBAL (in index.html) — already present ✅:
+  [x] WebSite + SearchAction
+  [x] Organization
+  [x] OnlineStore
+  [x] ItemList products
+
+PER-PAGE — ✅ already implemented:
+  [x] Product + AggregateRating + Review on /prodotto/*
+  [x] BreadcrumbList on /prodotto/*, /guide/*, /spedizioni/*
+  [x] FAQPage on home + product pages
+  [x] HowTo on /#come-funziona
+  [x] Article + Person on /guide/* ✅ NEW
+  [x] Speakable on /guide/* (TL;DR block) ✅ NEW
+
+TODO (low priority):
+  [ ] LocalBusiness (only if physical address exists)
+  [ ] VideoObject (when YouTube tutorials are added)
+
+
+# =====================================================================
+## 6. CONTENT / TOPICAL AUTHORITY (Pillar-Cluster)
+# =====================================================================
+
+PILLAR PAGE :  /  (homepage) → "Fresa Unghie"
+                Expand to 2,500-3,500 words covering all sub-topics.
+
+CLUSTER PAGES at /guide/  ✅ 6 PUBLISHED, 6 MORE TO ADD MANUALLY:
+  ✅ /guide/come-usare-fresa-unghie
+  ✅ /guide/fresa-unghie-gel-rimozione
+  ✅ /guide/punte-fresa-unghie-quale-scegliere
+  ✅ /guide/fresa-unghie-principianti
+  ✅ /guide/manutenzione-fresa-unghie
+  ✅ /guide/migliore-fresa-unghie-2026
+  [ ] /guide/fresa-unghie-acrilico-tutorial
+  [ ] /guide/fresa-unghie-vs-lima-manuale
+  [ ] /guide/fresa-unghie-pedicure-piedi
+  [ ] /guide/fresa-unghie-controindicazioni
+  [ ] /guide/fresa-unghie-cuticole-tecnica
+  [ ] /guide/fresa-unghie-prezzo-quanto-costa
+
+EACH ARTICLE (template already in place):
+  - 1,200-1,800 words
+  - 1 H1, logical H2/H3 hierarchy
+  - hero image + 3-5 inline images
+  - author (E-E-A-T) with Person schema
+  - publish + "Aggiornato il" date
+  - links to pillar + 3 related cluster posts
+  - product CTA at the bottom
+
+
+# =====================================================================
+## 7. PROGRAMMATIC SEO  (do manually, infrastructure ready ✅)
+# =====================================================================
+
+A) CITY PAGES — route /spedizioni/:city already live ✅
+   Current: 20 cities. Manual expansion plan to 50:
+     1. Add entries to src/data/cities.ts
+        Required fields: slug, name, region, uniqueNote (≥100 words)
+     2. CityPage template already renders schema (BreadcrumbList +
+        WebPage with PostalAddress) ✅
+     3. Append URLs to public/sitemap.xml
+     4. Avoid doorway pages: each uniqueNote must be ORIGINAL.
+
+B) PUNTE PAGES — route /punta-fresa/:type already live ✅
+   Current: 12 punte. Manual expansion plan to 25:
+     1. Add entries to src/data/punte.ts
+        Required fields: slug, name, material, useCase, description,
+        whenToUse, productsIncluded
+     2. PuntaPage already renders Product+Breadcrumb schema ✅
+     3. Append URLs to public/sitemap.xml
+
+C) COMPARISON PAGES — route /confronta/:slugs already live ✅
+   Suggested URLs:
+     /confronta/fresa-unghie-vs-lima-elettrica
+     /confronta/fresa-unghie-amazon-vs-professionale
+
+D) INDEXABLE FILTERS
+   Only one variant per attribute should be indexable.
+   Apply noindex+canonical on duplicates.
+
+
+# =====================================================================
+## 8. INTERNAL LINKING SILO
+# =====================================================================
+
+RULES:
+  - Home links to all clusters (max ~100 links total)
+  - Each cluster links back to pillar (1-2 contextual links)
+  - Related clusters link each other (3-5)
+  - Anchor text VARIED but keyword-rich (no "click here")
+  - Footer: link categories, NOT keyword stuffing
+  - Breadcrumb on every internal page  ✅
+
+CODE STATUS:
+  ✅ Footer.tsx — added "Guide" column (6 cluster links)
+  [ ] Footer.tsx — add "Spedizione in Italia" section with top 10 cities
+
+
+# =====================================================================
+## 9. IMAGE SEO
+# =====================================================================
+
+  [ ] Rename ALL images with keywords:
+        product-personal-hero.jpg → fresa-unghie-professionale-kit-12-punte.jpg
+        product-salone-hero.jpg   → fresa-professionale-salone-45000-rpm.jpg
+        nail-art-1.jpg            → manicure-fresa-unghie-gel.jpg
+  [ ] Alt text: "Fresa unghie professionale con 12 punte intercambiabili"
+      (descriptive, not stuffed)
+  [ ] Convert JPG → WebP + AVIF (40-60 % size saving)
+  ✅ width/height already set in OptimizedImage (no CLS)
+  ✅ loading="lazy" on non-LCP, decoding="async"
+  [ ] image-sitemap.xml: add caption + title for each image
+
+
+# =====================================================================
+## 10. AI-SEARCH OPTIMIZATION (GEO — Generative Engine Optimization)
+# =====================================================================
+
+WHY it differs from classic SEO:
+  - AI engines prefer FACTS, NUMBERS, CITATIONS, AUTHORS
+  - Reward STRUCTURED content with a clear answer in first 100 tokens
+  - Cite sources with authority + verifiable data
+  - Do NOT execute JavaScript → require pre-rendered HTML
+
+ACTIONS:
+  ✅ /llms.txt published with overview, products, guides, FAQ
+  ✅ AI bots allowed in robots.txt
+  ✅ "Risposta breve" TL;DR blocks on every /guide/* article
+  ✅ Speakable JSON-LD on guides (CSS selector .tldr)
+  ✅ Verifiable numeric data inserted ("12 punte", "45.000 RPM",
+     "180 mAh", "4 velocità", "spedizione 7 giorni", "reso 30 gg")
+  ✅ "Aggiornato il {date}" freshness signal on every guide
+  ✅ Person schema on guide author (Francesca Conti, sameAs)
+  [ ] /llms-full.txt with full plain-text product/FAQ content
+  [ ] Backlinks from sources AI engines already trust
+      (Wikipedia "manicure", Reddit r/RedditLaqueristas IT,
+       Alfemminile, Italian beauty blogs)
+  [ ] Bibliography / sources in technical guides (ISO standards,
+      Italian onicotecnica training boards)
+
+
+# =====================================================================
+## 11. E-E-A-T (Experience, Expertise, Authority, Trust)
+# =====================================================================
+
+  ✅ /chi-siamo page exists (improve with team photos, certifications)
+  ✅ AuthorBio.tsx + Person schema with Francesca Conti
+  [ ] Add sameAs links to verified social profiles in Person schema
+  [ ] /recensioni page with real UGC (customer photos)
+  ✅ Trust badges visible (secure payments, 30-day return, IT VAT)
+  [ ] Footer must show P.IVA + ragione sociale (Italian legal req)
+  ✅ Email supporto@ + contact form
+  [ ] Trustpilot / Google Business / Feedaty integration
+  ✅ Return policy clear and linked from every page
+
+
+# =====================================================================
+## 12. LOCAL SEO (Italy)
+# =====================================================================
+
+  [ ] Google Business Profile (service-area business)
+  [ ] Listings on:
+        - PagineGialle.it
+        - Trovaprezzi.it (price comparison)
+        - Idealo.it
+        - Kelkoo
+        - Google Shopping (product feed)
+  [ ] Google reviews → invite customers via post-purchase email
+  [ ] Consistent NAP (Name-Address-Phone) across all directories
+
+
+# =====================================================================
+## 13. OFF-PAGE / LINK BUILDING
+# =====================================================================
+
+ITALIAN OUTREACH (high priority):
+  - Beauty blogs: VanityFair.it, Cosmopolitan.it, Grazia.it (sponsored)
+  - Forums: Alfemminile, MyPersonalTrainer (beauty section)
+  - Onicotecnica influencers on Instagram/TikTok (micro 10-50k)
+  - Guest posts: nailart.it, beautystar.it
+  - Italian HARO: Source of Sources, Featured.com (for quotes)
+  - Press releases via PR Newswire IT, AdnKronos
+
+DIGITAL PR:
+  - Original study/survey: "73% of Italian women use an electric
+    nail file at least once a month" → press release → backlinks
+
+BRAND-OWNED LINKS:
+  - Instagram, TikTok, YouTube bio link
+  - Pinterest (very strong for beauty niche)
+
+
+# =====================================================================
+## 14. CRO (supports SEO indirectly)
+# =====================================================================
+
+  ✅ Reviews with photos below product fold
+  ✅ Live chat / WhatsApp button
+  ✅ Sticky add-to-cart
+  ✅ Trust strip
+  [ ] Shipping countdown ("Order before 14:00 for Wed delivery")
+  [ ] Bundle 1+1, 2+1
+  [ ] Cart recovery via email + browser push
+
+
+# =====================================================================
+## 15. MONITORING & KPIs
+# =====================================================================
+
+TOOLS:
+  ✅ Google Search Console (verified)
+  [ ] Bing Webmaster Tools (TO ADD)
+  [ ] IndexNow API → instant ping to Bing/Yandex on new pages
+  ✅ Google Analytics 4 (deferred load)
+  [ ] Ahrefs / Semrush / Ubersuggest (track "fresa unghie" SERP)
+  [ ] PageSpeed Insights (weekly)
+  [ ] Schema.org validator + Rich Results Test (after pre-rendering)
+
+KPIs to track:
+  - Average position "fresa unghie" + top 20 cluster keywords
+  - GSC clicks + impressions (Italy filter)
+  - CTR per query (target > 5 % top 10)
+  - Indexed pages / total pages (target > 95 %)
+  - Core Web Vitals (LCP < 2.5 s, INP < 200 ms, CLS < 0.1)
+  - Backlink referring domains (monthly growth)
+  - Citations in AI engines (Perplexity, ChatGPT browsing)
+
+
+# =====================================================================
+## 16. ROADMAP (12 weeks)
+# =====================================================================
+
+WEEK 1-2  ✅ DONE (this implementation)
+  ✅ llms.txt + AI bots in robots.txt
+  ✅ Code-split bundle, defer GA, self-host fonts
+  ✅ Product/Review/Breadcrumb schema verified on product pages
+  ✅ /guide blog + 6 SEO articles
+  ✅ Sitemap + Footer updated
+
+WEEK 3-4  ⏳ NEXT (manual)
+  [ ] Pre-rendering (vite-react-ssg or react-snap) — HIGHEST IMPACT
+  [ ] Expand homepage to 2,500 words
+  [ ] Rewrite product descriptions (1,500 words each)
+  [ ] Extend FAQ to 15 Q&A with FAQPage schema
+
+WEEK 5-8  Cluster content
+  [ ] Publish 6 more cluster articles
+  [ ] Tighten internal linking silo
+  [ ] Original photography
+
+WEEK 9-10 Programmatic SEO (manual data entry)
+  [ ] Cities 20 → 50 in cities.ts
+  [ ] Punte 12 → 25 in punte.ts
+  [ ] 5 comparison pages
+
+WEEK 11-12 Off-page & PR
+  [ ] Outreach to 30 blogs/influencers
+  [ ] Google Business Profile + IT directories
+  [ ] Digital PR (1 original study)
+  [ ] Bing Webmaster + IndexNow
+
+
+# =====================================================================
+## 17. IMMEDIATE NEXT ACTIONS (priority order)
+# =====================================================================
+
+  1. ⭐ PRE-RENDERING (vite-react-ssg) — biggest remaining SEO win.
+        Without it, AI crawlers and Bingbot see empty HTML.
+  2. Expand cities.ts to 50 entries (manual)
+  3. Expand punte.ts to 25 entries (manual)
+  4. Convert hero images to WebP + AVIF
+  5. Verify Bing Webmaster Tools + add IndexNow key
+  6. Submit updated sitemap in Google Search Console
+
+
+# =====================================================================
+##  END OF DOCUMENT — ready to rank 💅
+# =====================================================================

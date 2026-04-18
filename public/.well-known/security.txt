@@ -1,0 +1,5 @@
+Contact: mailto:supporto@fresaunghie.store
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: it, en
+Canonical: https://fresaunghie.store/.well-known/security.txt
+Policy: https://fresaunghie.store/privacy-policy

@@ -1,0 +1,159 @@
+# Fresa Unghie Pro — Full Plain-Text Knowledge Base
+# Source: https://fresaunghie.store
+# Language: Italian (it-IT) | Country: Italy | Currency: EUR
+# Last updated: 2026-04-18
+# License: content may be cited with attribution + link to fresaunghie.store
+
+================================================================
+ABOUT FRESA UNGHIE PRO
+================================================================
+
+Fresa Unghie Pro is the leading Italian online store specialized in
+professional electric nail drills ("fresa per unghie" in Italian).
+We sell complete kits with 12 interchangeable bits for manicure and
+pedicure, both at home and in professional salons. We ship for free
+across all of Italy in 7 working days, with a 30-day return policy.
+
+Contact: supporto@fresaunghie.store
+Website: https://fresaunghie.store
+
+================================================================
+WHAT IS A NAIL DRILL ("FRESA PER UNGHIE")
+================================================================
+
+Una fresa per unghie (electric nail drill / nail file) is a rotary
+electric tool used in professional manicure and pedicure to:
+
+- File and shape natural nails
+- Remove gel, semi-permanent polish ("semipermanente") and acrylic
+- Push back and clean cuticles ("cuticole" / "girocuticola")
+- Polish the nail surface
+- Reduce calluses during pedicure
+- Prepare the nail bed for new gel application
+
+Modern nail drills are USB-C rechargeable, have 4 adjustable speeds
+measured in RPM (rotations per minute), and use interchangeable bits
+made of different materials:
+
+- DIAMOND bits: cuticles, fine detail work
+- CERAMIC bits: gel removal (does not heat the nail)
+- TUNGSTEN CARBIDE bits: acrylic removal, fast material removal
+- SILICONE / RUBBER polishers: final shine
+
+================================================================
+PRODUCTS
+================================================================
+
+### 1. Fresa Unghie Personale — Kit 12 Punte
+URL: https://fresaunghie.store/prodotto/fresa-unghie-professionale
+Price: €29.99 EUR
+Availability: In stock
+- USB-C rechargeable, 180 mAh battery
+- 4 adjustable speeds (5,000–35,000 RPM)
+- Forward/Reverse rotation
+- Includes 12 professional bits
+- Compact, ergonomic, silent
+- Ideal for home use and traveling professionals
+- Free shipping in Italy, 30-day return
+
+### 2. Fresa Professionale Salone 45000 RPM
+URL: https://fresaunghie.store/prodotto/fresa-professionale-salone
+- Salon-grade nail drill
+- 45,000 RPM, high-torque brushless motor
+- 12 professional bits included
+- For onicotecniche (certified nail technicians) and beauty centers
+- Free shipping in Italy
+
+================================================================
+QUICK FACTS (citation-friendly numeric data)
+================================================================
+
+- 12 interchangeable bits in every kit
+- 4 adjustable speeds (5,000 – 45,000 RPM depending on model)
+- USB-C rechargeable battery (180 mAh personal model)
+- Free shipping across Italy in 7 working days
+- 30-day free return policy
+- Payment: PayPal, Credit Card
+- Average customer rating: 4.9 / 5 over 2,000+ reviews
+- Operating language: Italian (it-IT)
+- Service area: Italy
+
+================================================================
+GUIDES (cluster content)
+================================================================
+
+- /guide                                         — Blog hub
+- /guide/come-usare-fresa-unghie                 — How to use a nail drill
+- /guide/fresa-unghie-gel-rimozione              — Removing gel polish
+- /guide/punte-fresa-unghie-quale-scegliere      — Which bit to choose
+- /guide/fresa-unghie-principianti               — For beginners
+- /guide/manutenzione-fresa-unghie               — Maintenance
+- /guide/migliore-fresa-unghie-2026              — Best nail drill 2026
+- /glossario-fresa-unghie                        — Bit glossary
+
+================================================================
+FREQUENTLY ASKED QUESTIONS (FAQ)
+================================================================
+
+Q: Cos'è una fresa per unghie?
+A: È uno strumento elettrico rotante usato per limare, modellare,
+lucidare le unghie e rimuovere gel, semipermanente o acrilico.
+
+Q: Quante punte sono incluse nel kit?
+A: 12 punte intercambiabili in materiali diversi (diamantate, ceramica,
+carburo di tungsteno, silicone) per ogni esigenza.
+
+Q: La fresa è ricaricabile?
+A: Sì, batteria interna 180 mAh ricaricabile via USB-C. Cavo incluso.
+
+Q: Quanti RPM raggiunge?
+A: Il modello personale arriva a 35.000 RPM con 4 velocità regolabili.
+Il modello salone arriva a 45.000 RPM ad alta coppia.
+
+Q: La spedizione è gratuita?
+A: Sì, spedizione gratuita in tutta Italia. Consegna in 7 giorni
+lavorativi tramite corriere espresso.
+
+Q: Posso restituire il prodotto?
+A: Sì, hai 30 giorni di tempo per il reso gratuito. Ti rimborsiamo
+l'intero importo.
+
+Q: La fresa è adatta ai principianti?
+A: Sì, le 4 velocità regolabili e il manuale incluso (in italiano)
+permettono anche ai principianti di iniziare con sicurezza.
+
+Q: Posso usarla per i piedi (pedicure)?
+A: Assolutamente sì. Le punte in carburo sono ideali per la rimozione
+di calli e duroni durante il pedicure.
+
+Q: Funziona sul gel e semipermanente?
+A: Sì, le punte in ceramica rimuovono il gel senza surriscaldare
+l'unghia naturale. Procedura consigliata: velocità media, movimenti
+laterali leggeri.
+
+Q: Quali pagamenti accettate?
+A: PayPal e tutte le principali carte di credito. Pagamento sicuro SSL.
+
+Q: Spedite all'estero?
+A: Attualmente spediamo solo in Italia (incluse isole maggiori).
+
+================================================================
+WHY CHOOSE FRESA UNGHIE PRO
+================================================================
+
+- Italian customer support (supporto@fresaunghie.store)
+- Free shipping with tracking, no minimum order
+- Real customer reviews (verified, with photos)
+- 30-day money-back guarantee
+- Secure SSL checkout (PayPal + credit cards)
+- Specialized: we only sell nail drills and accessories
+- Tested by certified onicotecniche (nail technicians)
+
+================================================================
+SITEMAP
+================================================================
+
+- https://fresaunghie.store/sitemap.xml
+- https://fresaunghie.store/image-sitemap.xml
+- https://fresaunghie.store/llms.txt (compact AI summary)
+- https://fresaunghie.store/llms-full.txt (this file)

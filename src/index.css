@@ -1,0 +1,131 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 94%;
+    --foreground: 0 0% 4%;
+
+    --card: 40 33% 94%;
+    --card-foreground: 0 0% 4%;
+
+    --popover: 40 33% 94%;
+    --popover-foreground: 0 0% 4%;
+
+    --primary: 330 65% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 20% 90%;
+    --secondary-foreground: 0 0% 4%;
+
+    --muted: 330 20% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 330 65% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 20% 80%;
+    --input: 330 20% 80%;
+    --ring: 330 65% 65%;
+
+    --radius: 0.5rem;
+
+    /* Custom brand tokens - renaming to maintain code compatibility but using pink values */
+    --gold: 330 65% 65%;
+    --gold-light: 330 65% 85%;
+    --gold-dark: 330 65% 45%;
+    --cream: 330 20% 98%;
+    --cream-dark: 330 20% 92%;
+    --nero: 0 0% 4%;
+    --nero-light: 0 0% 8%;
+    --nero-card: 0 0% 12%;
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 330 20% 98%;
+    --sidebar-primary: 330 65% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 330 20% 98%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 330 65% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Jost', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--nero));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold));
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pink text gradient utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, hsl(330, 65%, 65%), hsl(330, 80%, 85%), hsl(330, 65%, 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section backgrounds */
+.bg-nero {
+  background-color: hsl(var(--nero));
+  color: hsl(var(--cream));
+}
+
+.bg-cream {
+  background-color: hsl(var(--cream));
+  color: hsl(var(--nero));
+}
+
+/* Gold border glow */
+.gold-border-glow {
+  border: 1px solid hsl(var(--gold) / 0.4);
+  box-shadow: 0 0 20px hsl(var(--gold) / 0.1);
+}
+
+/* Frosted glass */
+.frosted-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: hsl(var(--nero) / 0.85);
+}
+
+/* Content visibility for below-fold performance (INP optimization) */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
